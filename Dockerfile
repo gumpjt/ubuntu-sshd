@@ -3,7 +3,7 @@ FROM       ubuntu:22.04
 
 RUN apt-get update
 
-RUN apt-get install -y openssh-server vim sudo lrzsz zip unzip htop git autoconf autopoint gettext build-essential libmaxminddb-dev libncursesw5-dev libgeoip-dev rsync
+RUN apt-get install -y openssh-server vim sudo lrzsz zip unzip htop git autoconf autopoint gettext build-essential libmaxminddb-dev libncursesw5-dev libgeoip-dev rsync checkinstall zlib1g-dev libssl-dev
 RUN mkdir /var/run/sshd
 
 RUN echo 'root:root' | chpasswd
