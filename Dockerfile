@@ -3,7 +3,7 @@ FROM       ubuntu:22.04
 
 RUN apt-get update
 
-RUN apt-get install -y openssh-server vim sudo lrzsz zip unzip htop git autoconf
+RUN apt-get install -y openssh-server vim sudo lrzsz zip unzip htop git autoconf autopoint gettext
 RUN mkdir /var/run/sshd
 
 RUN echo 'root:root' | chpasswd
