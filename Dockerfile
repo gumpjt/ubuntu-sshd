@@ -3,7 +3,7 @@ FROM       ubuntu:22.04
 
 RUN apt-get update
 
-RUN apt-get install -y openssh-server lua5.4 liblua5.4 liblua5.4-dev vim sudo lrzsz zip unzip htop git autoconf autopoint gettext build-essential libmaxminddb-dev libncursesw5-dev libgeoip-dev rsync checkinstall zlib1g-dev libssl-dev cmake
+RUN apt-get install -y openssh-server cron lua5.4 liblua5.4 liblua5.4-dev vim sudo lrzsz zip unzip htop git autoconf autopoint gettext build-essential libmaxminddb-dev libncursesw5-dev libgeoip-dev rsync checkinstall zlib1g-dev libssl-dev cmake
 RUN mkdir /var/run/sshd
 
 RUN echo 'root:root' | chpasswd
